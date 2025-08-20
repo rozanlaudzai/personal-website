@@ -103,7 +103,7 @@ export default function Home() {
         </section>
 
         {/* Experience */}
-        <section id="experience" className="space-y-6">
+        <section id="experiences" className="space-y-6">
           <h2 className="text-xl font-semibold tracking-tight">Experiences</h2>
           <div className="space-y-4">
             <div className="glass rounded-lg p-6">
