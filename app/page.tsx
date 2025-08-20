@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 type Award = {
   title: string;
@@ -8,7 +9,7 @@ type Award = {
 };
 
 const awards: Award[] = [
-  { title: "Finalist - Indonesia National Olympiad in Informatics (OSN Informatika)", issuer: "Kemendikbudristek & Puspresnas", level: "National", year: "2024" },
+  { title: "Finalist - Indonesia National Olympiad in Informatics (OSN Informatika)", issuer: "Ministry of Education of The Republic of Indonesia", level: "National", year: "2024" },
   { title: "1st Place - MAGE 2024 - Competitive Programming", issuer: "Institut Teknologi Sepuluh Nopember", level: "National", year: "2024" },
   { title: "3rd Place - Airnology 2024 - Coding Challenge", issuer: "Universitas Airlangga", level: "National", year: "2024" },
   { title: "1st Place - Computer Science Showdown 2024 - Competitive Programming", issuer: "Universitas Lampung", level: "National", year: "2024" },
@@ -22,19 +23,7 @@ const awards: Award[] = [
 export default function Home() {
   return (
     <div className="font-sans min-h-screen">
-      <header className="border-b border-[--color-border]/60 sticky top-0 z-10 backdrop-blur bg-background/80">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-xl font-semibold tracking-tight heading-accent">Rozan Laudzai</div>
-          <nav className="text-sm text-[--color-muted] flex gap-6">
-            <a href="#about" className="hover:text-[--color-foreground]">About</a>
-            <a href="#education" className="hover:text-[--color-foreground]">Education</a>
-            <a href="#awards" className="hover:text-[--color-foreground]">Awards</a>
-            <a href="#projects" className="hover:text-[--color-foreground]">Projects</a>
-            <a href="#experience" className="hover:text-[--color-foreground]">Experience</a>
-            <a href="#skills" className="hover:text-[--color-foreground]">Skills</a>
-          </nav>
-        </div>
-      </header>
+      <Navbar />
 
       <main className="container mx-auto px-6 py-12 space-y-16">
         {/* Hero */}
@@ -141,6 +130,10 @@ export default function Home() {
                 <h3 className="font-medium">Mathematics Olympiad Problem Setter — Smanti Education Festival</h3>
                 <span className="text-xs text-[--color-muted]">March 2023 & March 2024</span>
               </div>
+              <ul className="list-disc list-inside text-sm text-[--color-muted] mt-2 space-y-1">
+                <li>The Smanti Education Festival is an annual event organized by SMA Negeri 3 Malang. It features various competitions for high school students, including a mathematics olympiad specifically for junior high school students.</li>
+                <li>In 2023 and 2024, I created numerous mathematics olympiad problems using LaTeX.</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -177,7 +170,7 @@ export default function Home() {
               <p className="font-medium">English</p>
               <p className="text-xs text-[--color-muted]">Working proficiency</p>
             </div>
-          </div>
+        </div>
         </section>
       </main>
 
