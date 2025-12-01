@@ -183,6 +183,28 @@ export default function Home() {
           <h2 className="text-xl font-semibold tracking-tight">Projects</h2>
           <div className="glass rounded-lg p-6">
             <div className="flex items-center justify-between">
+              <h3 className="font-medium">Go-MySQL RESTful API</h3>
+              <span className="text-xs text-[--color-muted]">
+                November 2025
+              </span>
+            </div>
+            <p className="text-sm text-[--color-muted]">
+              A RESTful API designed for category management, built with Go and
+              MySQL. This project demonstrates clean architecture patterns,
+              secure API key authentication, comprehensive error handling, and
+              full CRUD operations.
+            </p>
+            <div className="mt-3">
+              <Link
+                href="https://github.com/rozanlaudzai/go-mysql-restful-api"
+                className="text-[--color-accent] hover:underline"
+              >
+                Repository
+              </Link>
+            </div>
+          </div>
+          <div className="glass rounded-lg p-6">
+            <div className="flex items-center justify-between">
               <h3 className="font-medium">Flask To-Do List</h3>
               <span className="text-xs text-[--color-muted]">June 2025</span>
             </div>
