@@ -32,6 +32,7 @@ const awards: Award[] = [
   {
     title: "1st Place - Pekan IT 2025 - Competitive Programming",
     issuer: "Universitas Singaperbangsa Karawang",
+    level: "National",
     year: "2025",
   },
   {
@@ -293,13 +294,31 @@ export default function Home() {
               <p className="font-medium">Competitive Programming</p>
             </div>
             <div className="glass rounded-lg p-4">
-              <p className="font-medium">Tutoring</p>
+              <p className="font-medium">Go (Golang)</p>
             </div>
             <div className="glass rounded-lg p-4">
-              <p className="font-medium">Full‑Stack Web Development</p>
-              <p className="text-xs text-[--color-muted] mt-1">
-                Django, Express.js, React, Next.js, PostgreSQL
-              </p>
+              <p className="font-medium">Python</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">Fiber</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">Django</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">Flask</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">MySQL</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">PostgreSQL</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">Docker</p>
+            </div>
+            <div className="glass rounded-lg p-4">
+              <p className="font-medium">Nginx</p>
             </div>
             <div className="glass rounded-lg p-4">
               <p className="font-medium">LaTeX</p>
