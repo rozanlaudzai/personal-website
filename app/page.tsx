@@ -97,7 +97,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-start md:items-center gap-8">
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Hi, I'm <span className="heading-accent">Rozan</span>
+              Hi, I&apos;m <span className="heading-accent">Rozan</span>
             </h1>
             <p className="text-[--color-muted] max-w-2xl">
               Backend & DevOps Enthusiast | Competitive Programmer
@@ -137,7 +137,7 @@ export default function Home() {
                 </span>
               </div>
               <p className="text-sm text-[--color-muted]">
-                Bachelor's degree, Computer Science
+                Bachelor&apos;s degree, Computer Science
               </p>
             </div>
             <div className="glass rounded-lg p-6">
