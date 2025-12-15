@@ -96,12 +96,12 @@ export default function Home() {
       <main className="container mx-auto px-6 py-12 space-y-16">
         {/* Hero */}
         <section className="flex flex-col md:flex-row items-start md:items-center gap-8">
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 flex flex-col items-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Hi, I&apos;m <span className="heading-accent">Rozan</span>
+              Hi, I&apos;m <span className="heading-accent">Rozan</span> 👋
             </h1>
             <p className="text-[--color-muted] max-w-2xl">
-              Backend & DevOps Enthusiast | Competitive Programmer
+              Backend & DevOps Engineer | Competitive Programmer
             </p>
             <div className="flex gap-3">
               <Link
@@ -128,7 +128,7 @@ export default function Home() {
 
         {/* Education */}
         <section id="education" className="space-y-6">
-          <h2 className="text-xl font-semibold tracking-tight">Education</h2>
+          <h2 className="text-xl font-semibold tracking-tight">🎓 Education</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="glass rounded-lg p-6">
               <div className="flex items-center justify-between">
@@ -158,7 +158,7 @@ export default function Home() {
 
         {/* Awards */}
         <section id="awards" className="space-y-6">
-          <h2 className="text-xl font-semibold tracking-tight">Awards</h2>
+          <h2 className="text-xl font-semibold tracking-tight">🏆 Awards</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {awards.map((a, idx) => (
               <div key={idx} className="glass rounded-lg p-4">
@@ -181,7 +181,7 @@ export default function Home() {
 
         {/* Projects */}
         <section id="projects" className="space-y-6">
-          <h2 className="text-xl font-semibold tracking-tight">Projects</h2>
+          <h2 className="text-xl font-semibold tracking-tight">💻 Projects</h2>
           <div className="glass rounded-lg p-6">
             <div className="flex items-center justify-between">
               <h3 className="font-medium">Go-MySQL RESTful API</h3>
@@ -225,7 +225,9 @@ export default function Home() {
 
         {/* Experience */}
         <section id="experiences" className="space-y-6">
-          <h2 className="text-xl font-semibold tracking-tight">Experiences</h2>
+          <h2 className="text-xl font-semibold tracking-tight">
+            🏢 Experiences
+          </h2>
           <div className="space-y-4">
             <div className="glass rounded-lg p-6">
               <div className="flex items-center justify-between">
@@ -288,7 +290,7 @@ export default function Home() {
 
         {/* Skills */}
         <section id="skills" className="space-y-6">
-          <h2 className="text-xl font-semibold tracking-tight">Skills</h2>
+          <h2 className="text-xl font-semibold tracking-tight">🤖 Skills</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="glass rounded-lg p-4">
               <p className="font-medium">Competitive Programming</p>
@@ -300,7 +302,7 @@ export default function Home() {
               <p className="font-medium">Python</p>
             </div>
             <div className="glass rounded-lg p-4">
-              <p className="font-medium">Fiber</p>
+              <p className="font-medium">GoFiber</p>
             </div>
             <div className="glass rounded-lg p-4">
               <p className="font-medium">Django</p>
@@ -328,7 +330,7 @@ export default function Home() {
 
         {/* Languages */}
         <section id="languages" className="space-y-4">
-          <h2 className="text-xl font-semibold tracking-tight">Languages</h2>
+          <h2 className="text-xl font-semibold tracking-tight">🌎 Languages</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="glass rounded-lg p-4">
               <p className="font-medium">Bahasa Indonesia</p>
@@ -337,7 +339,7 @@ export default function Home() {
             <div className="glass rounded-lg p-4">
               <p className="font-medium">English</p>
               <p className="text-xs text-[--color-muted]">
-                Working proficiency
+                Professional working proficiency
               </p>
             </div>
           </div>
