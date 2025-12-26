@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navbar from "./components/Navbar";
+import LinkBox from "./components/LinkBox";
 
 type Award = {
   title: string;
@@ -88,6 +89,26 @@ const awards: Award[] = [
   },
 ];
 
+const skills: string[] = [
+  "Go (Golang)",
+  "Python",
+  "TypeScript",
+  "JavaScript",
+  "GoFiber",
+  "Django",
+  "Flask",
+  "Tailwind CSS",
+  "React",
+  "Next.js",
+  "Three.js",
+  "PostgreSQL",
+  "MySQL",
+  "Docker",
+  "Nginx",
+  "LaTeX",
+  "Competitive Programming",
+];
+
 export default function Home() {
   return (
     <div className="font-sans min-h-screen">
@@ -101,27 +122,14 @@ export default function Home() {
               Hi, I&apos;m <span className="heading-accent">Rozan</span> 👋
             </h1>
             <p className="text-[--color-muted] max-w-2xl">
-              Backend & DevOps Engineer | Competitive Programmer
+              Full-Stack Engineer (Focused on Backend) | Competitive Programmer
             </p>
             <div className="flex gap-3">
-              <Link
-                href="mailto:rozanlaudzai717@gmail.com"
-                className="px-4 py-2 rounded-md border border-[--color-border] hover:border-[--color-accent] transition"
-              >
-                Email
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/rozan-laudzai-2576b1336/"
-                className="px-4 py-2 rounded-md border border-[--color-border] hover:border-[--color-accent] transition"
-              >
+              <LinkBox href="mailto:rozanlaudzai717@gmail.com">Email</LinkBox>
+              <LinkBox href="https://www.linkedin.com/in/rozan-laudzai-2576b1336/">
                 LinkedIn
-              </Link>
-              <Link
-                href="https://github.com/rozanlaudzai"
-                className="px-4 py-2 rounded-md border border-[--color-border] hover:border-[--color-accent-2] transition"
-              >
-                GitHub
-              </Link>
+              </LinkBox>
+              <LinkBox href="https://github.com/rozanlaudzai">GitHub</LinkBox>
             </div>
           </div>
         </section>
@@ -184,6 +192,22 @@ export default function Home() {
           <h2 className="text-xl font-semibold tracking-tight">💻 Projects</h2>
           <div className="glass rounded-lg p-6">
             <div className="flex items-center justify-between">
+              <h3 className="font-medium">GoFiber-PostgreSQL RESTful API</h3>
+              <span className="text-xs text-[--color-muted]">
+                December 2025
+              </span>
+            </div>
+            <p className="text-sm text-[--color-muted]">
+              A RESTful API for Library Management with Auth System
+            </p>
+            <div className="mt-3">
+              <LinkBox href="https://github.com/rozanlaudzai/gofiber-postgresql-restful-api">
+                Repository
+              </LinkBox>
+            </div>
+          </div>
+          <div className="glass rounded-lg p-6">
+            <div className="flex items-center justify-between">
               <h3 className="font-medium">Go-MySQL RESTful API</h3>
               <span className="text-xs text-[--color-muted]">
                 November 2025
@@ -196,12 +220,9 @@ export default function Home() {
               full CRUD operations.
             </p>
             <div className="mt-3">
-              <Link
-                href="https://github.com/rozanlaudzai/go-mysql-restful-api"
-                className="text-[--color-accent] hover:underline"
-              >
+              <LinkBox href="https://github.com/rozanlaudzai/go-mysql-restful-api">
                 Repository
-              </Link>
+              </LinkBox>
             </div>
           </div>
           <div className="glass rounded-lg p-6">
@@ -213,17 +234,14 @@ export default function Home() {
               To-Do List Web App with auth system using Flask
             </p>
             <div className="mt-3">
-              <Link
-                href="https://github.com/rozanlaudzai/flask-todo-list"
-                className="text-[--color-accent] hover:underline"
-              >
+              <LinkBox href="https://github.com/rozanlaudzai/flask-todo-list">
                 Repository
-              </Link>
+              </LinkBox>
             </div>
           </div>
         </section>
 
-        {/* Experience */}
+        {/* Experiences */}
         <section id="experiences" className="space-y-6">
           <h2 className="text-xl font-semibold tracking-tight">
             🏢 Experiences
@@ -291,40 +309,15 @@ export default function Home() {
         {/* Skills */}
         <section id="skills" className="space-y-6">
           <h2 className="text-xl font-semibold tracking-tight">🤖 Skills</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Competitive Programming</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Go (Golang)</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Python</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">GoFiber</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Django</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Flask</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">MySQL</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">PostgreSQL</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Docker</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">Nginx</p>
-            </div>
-            <div className="glass rounded-lg p-4">
-              <p className="font-medium">LaTeX</p>
-            </div>
+          <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
+            {skills.map((value, idx) => (
+              <div
+                key={idx}
+                className="glass rounded-lg p-4 flex justify-center"
+              >
+                <p className="font-medium">{value}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -348,7 +341,7 @@ export default function Home() {
 
       <footer className="border-t border-[--color-border]/60 mt-16">
         <div className="container mx-auto px-6 py-8 text-sm text-[--color-muted] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Rozan Laudzai</p>
+          <p>&copy; {new Date().getFullYear()} Rozan Laudzai</p>
           <div className="flex gap-4">
             <Link
               href="mailto:rozanlaudzai717@gmail.com"
