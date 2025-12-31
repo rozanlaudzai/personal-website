@@ -192,6 +192,27 @@ export default function Home() {
           <h2 className="text-xl font-semibold tracking-tight">💻 Projects</h2>
           <div className="glass rounded-lg p-6">
             <div className="flex items-center justify-between">
+              <h3 className="font-medium">3D Solar System Simulation</h3>
+              <span className="text-xs text-[--color-muted]">
+                December 2025
+              </span>
+            </div>
+            <p className="text-sm text-[--color-muted]">
+              A Simple Solar System Simulation, built with React.js, Next.js,
+              and Three.js
+            </p>
+            <div className="mt-3">
+              <LinkBox href="https://github.com/rozanlaudzai/3D-Solar-System">
+                Repository
+              </LinkBox>
+              <span className="m-1" />
+              <LinkBox href="https://roz-3d-solar-system.vercel.app">
+                Deployment
+              </LinkBox>
+            </div>
+          </div>
+          <div className="glass rounded-lg p-6">
+            <div className="flex items-center justify-between">
               <h3 className="font-medium">GoFiber-PostgreSQL RESTful API</h3>
               <span className="text-xs text-[--color-muted]">
                 December 2025
